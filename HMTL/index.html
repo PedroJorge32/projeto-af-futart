@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/js/bootstrap.min.js" />
+
+
+    <title>PROJETO WEB</title>
+</head>
+
+<body>
+
+    <header class="d-flex justify-content-between align-items-center" aria-label="Cabeçalho com menu de navegação">
+
+        <!-- O LOGO -->
+        <a href="#" aria-label="Ir para a página inicial">
+            <img src="../img/Fut 1.png" alt="Banner ">
+        </a>
+
+
+
+        <!-- O MENU DE NAVEGAÇÃO -->
+        <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+            aria-expanded="false">☰</button>
+
+        <ul id="menu" role="menu" class="d-flex gap-3 list-unstyled m-0">
+            <li><a class="linkMenu" href="index.html">Home</a></li>
+            <li><a class="linkMenu" href="sobre.html">Sobre</a></li>
+            <li><a class="linkMenu" href="servico.html">Serviços</a></li>
+            <li><a class="linkMenu" href="#">Contato</a></li>
+        </ul>
+
+    </header>
+    <!-- TITULO  -->
+
+
+
+    <main id="conteudo">
+        <section aria-label="texto alternativo" id="hieroglyph"> </section>
+
+        <div class=" minibar container-fluid d-flex flex-column justify-content-center align-items-center"
+            style="background-color: #f5f5dc;">
+            <h1>Bem-vindo ao FutArt</h1>
+            <p>A maior loja de Artigos esportivos do Brasil</p>
+        </div>
+
+        <!-- O CAROUSEL DE IMAGENS -->
+        <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="..//img/ligard.jpeg" class="d-block w-50 mx-auto" alt="Banner 1" />
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..//img/galera.jpeg" class="d-block w-50 mx-auto" alt="Banner 2" />
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..//img/ney.jpeg" class="d-block w-50 mx-auto" alt="Banner 3" />
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..//img/arrras.jpeg" class="d-block w-50 mx-auto" alt="Banner 4" />
+                </div>
+
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..//img/judas.jpeg" class="d-block w-50 mx-auto" alt="Banner 5" />
+                </div>
+            </div>
+
+
+
+            <!-- BOTÕES PARA IR E VOLTAR-->
+            <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button"
+                data-bs-slide="prev" aria-label="Voltar banner">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button"
+                data-bs-slide="next" aria-label="Avançar banner">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+
+        </section>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="section-banner-home mt-5" aria-label="chamada principal">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 align-items-center justify-content-center d-flex">
+
+
+                        <img src="../img/Banner.jpeg" alt="banner" loading="lazy">
+
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <section class="texto-banner d-none d-md-block" aria-label="mensagem princiapal">
+                            <h1>Conheça nossas camisetas de 2026</h1>
+                            <p>Esta busca da camiseta do seu time? procuro os melhores
+                                lançamentos de 2026 e aproveite nossas promoções!</p>
+                            <a href="#" aria-label="Saiba mais sobre os lançamentos"
+                                class="btn btn-outline-danger">Saiba
+                                mais</a>
+                        </section>
+
+                    </div>
+
+
+
+
+                </div>
+
+        </section>
+
+        <!-- SEÇÃO DE PRODUTOS -->
+
+        <section class="section-produtos mt-5" aria-label="produtos em destaque">
+            <div class=" minibar container-fluid justify-content-center align-items-center d-flex flex-column p-0 mb-5">
+
+                <header class="text-center mb-3">
+                    <h2>Os melhores lançamentos de 2026</h2>
+                    <p>Camisas recém-lançadas com os designs mais modernos!</p>
+                </header>
+
+
+                <div class="row text-center">
+
+                    <div class="card col-6 col-md-5 pr-0 mr-5" style="width: 15rem;">
+                        <figure>
+                            <a href="../produto.html" aria-label="ver detalhes das naves">
+                                <img src="../img/CAMISA 1.jpeg" alt="FOTO CAMISA1" width="100%" loading="lazy">
+                                <figcaption>Corinthians<br> R$ 150,00</figcaption>
+
+
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class=" card col-6 col-md-5 pr-0 " style="width: 15rem;">
+                        <figure>
+                            <a href="#" aria-label="ver detalhes das naves">
+                                <img src="../img/CAMISA 2.jpeg" alt="FOTO CAMISA2" width="100%" loading="lazy">
+                                <figcaption>Seleção Brasileira <br> R$ 150,00</figcaption>
+
+                            </a>
+                        </figure>
+                    </div>
+                    <div class=" card col-6 col-md-5 pr-0" style="width: 15rem;">
+                        <figure>
+                            <a href="#" aria-label="ver detalhes das naves">
+                                <img src="../img/CAMISA 3.jpeg" alt="FOTO CAMISA3" width="100%" loading="lazy">
+                                <figcaption>Santos<br> R$ 150,00</figcaption>
+
+                            </a>
+                        </figure>
+                    </div>
+                    <div class=" card col-6 col-md-5 pr-0" style="width: 15rem;">
+                        <figure>
+                            <a href="#" aria-label="ver detalhes das naves">
+                                <img src="../img/CAMISA 4.jpeg" alt="FOTO CAMISA4" width="100%" loading="lazy">
+                                <figcaption>Cruzeiro<br> R$ 150,00</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="card col-6 col-md-5 pr-0" style="width: 15rem;">
+                        <figure>
+                            <a href="#" aria-label="ver detalhes das naves">
+                                <img src="../img/camisa 5.jpeg" alt="FOTO CAMISA4" width="100%" loading="lazy">
+                                <figcaption>Vitória<br> R$ 66,00</figcaption>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Whatzap section -->
+
+        <aside class="whatsapp" aria-label="Contato via Whatzap">
+            <div class="container-grid logo-whats">
+                <a href="https://wa.link/x1zbu1" target="_blank" rel="noopener noreferrer" aria-label="Abrir whats">
+                    <img class="pulse" src="../img/logos.whats.png" alt="Logo do WhatsApp">
+
+                </a>
+
+            </div>
+
+        </aside>
+
+    </main>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

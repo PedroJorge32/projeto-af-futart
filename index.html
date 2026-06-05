@@ -1,0 +1,194 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: FutArt - Loja fictícia de artigos esportivos
+Aluno: Pedro Henrique dos Santos Jorge - RA: 250972
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutArt - Home</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img class="logo-menu" src="./img/Fut 1.png" alt="Logo FutArt">
+                    FutArt
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-carousel p-0" aria-label="Destaques da loja FutArt">
+            <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primeiro banner"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Segundo banner"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Terceiro banner"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="--banner-bg: url('./img/ligard.jpeg');">
+                        <img src="./img/ligard.jpeg" class="d-block w-100" alt="Jogador com camisa esportiva em campo">
+                        <div class="carousel-caption">
+                            <h1>FutArt</h1>
+                            <p>Camisas, lançamentos e produtos para vestir a paixão pelo futebol.</p>
+                            <a class="btn btn-futart" href="galeria.html">Ver lançamentos</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="--banner-bg: url('./img/galera.jpeg');">
+                        <img src="./img/galera.jpeg" class="d-block w-100" alt="Torcedores reunidos em evento esportivo">
+                        <div class="carousel-caption">
+                            <h2>Para torcer do seu jeito</h2>
+                            <p>Modelos de clubes e seleções para jogo, resenha e arquibancada.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="--banner-bg: url('./img/ney.jpeg');">
+                        <img src="./img/ney.jpeg" class="d-block w-100" alt="Jogador de futebol em destaque">
+                        <div class="carousel-caption">
+                            <h2>Novidades na FutArt</h2>
+                            <p>Ofertas especiais e camisas que acabaram de chegar na loja.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev" aria-label="Banner anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next" aria-label="Próximo banner">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="faixa-apresentacao">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <article class="col-lg-7 animado">
+                        <span class="badge-futart">Loja de futebol</span>
+                        <h2 class="titulo-secao mt-3">A FutArt conecta torcedores aos mantos que representam sua história.</h2>
+                        <p class="texto-limite">Aqui o torcedor encontra camisas de clubes e seleções, kits promocionais, novidades de temporada e atendimento pensado para quem vive futebol todos os dias.</p>
+                    </article>
+                    <article class="col-lg-5">
+                        <div class="lista-beneficios">
+                            <div class="beneficio">
+                                <h3 class="h5">Camisas selecionadas</h3>
+                                <p>Modelos de clubes brasileiros, seleções e lançamentos para diferentes estilos de torcedor.</p>
+                            </div>
+                            <div class="beneficio">
+                                <h3 class="h5">Compra fácil</h3>
+                                <p>Vitrine organizada, contato rápido e informações claras sobre cada produto da loja.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="text-center mb-5">
+                <h2 class="titulo-secao">Destaques da loja</h2>
+                <p>Produtos mais procurados pelos torcedores da FutArt.</p>
+            </div>
+            <div class="row g-4 grade-destaques">
+                <article class="col-md-4">
+                    <div class="card card-futart">
+                        <img src="./img/CAMISA 1.jpeg" class="card-img-top" alt="Camisa do Corinthians">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Camisas de clubes</h3>
+                            <p class="card-text">Modelos inspirados em grandes times brasileiros, com foco em identidade e paixão.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="card card-futart">
+                        <img src="./img/CAMISA 2.jpeg" class="card-img-top" alt="Camisa da seleção brasileira">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Seleções nacionais</h3>
+                            <p class="card-text">Produtos para torcer em grandes jogos, campeonatos e eventos internacionais.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4">
+                    <div class="card card-futart">
+                        <img src="./img/Banner.jpeg" class="card-img-top" alt="Banner promocional FutArt">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Lançamentos 2026</h3>
+                            <p class="card-text">Novidades da temporada para renovar o guarda-roupa de quem ama futebol.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="banner-produto">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <article class="col-lg-6">
+                        <h2 class="titulo-secao text-white">Conheça a galeria de novidades</h2>
+                        <p>Veja camisas por categoria, ofertas da temporada e modelos para todos os tipos de torcedor.</p>
+                        <a class="btn btn-futart" href="galeria.html">Acessar galeria</a>
+                    </article>
+                    <figure class="col-lg-6 mb-0">
+                        <img src="./img/arrras.jpeg" alt="Jogador comemorando em campo">
+                        <figcaption class="visually-hidden">Destaque visual da galeria FutArt.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="container text-center">
+            <h2 class="titulo-secao">Fale com a FutArt</h2>
+            <p class="mx-auto texto-limite">Tire dúvidas sobre tamanhos, disponibilidade, ofertas e pedidos personalizados para sua torcida.</p>
+            <a class="btn btn-contorno" href="contato.html">Ir para contato</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-grid">
+            <section class="rodape-coluna">
+                <h2>FutArt</h2>
+                <p>Camisas de futebol, lançamentos e produtos para quem vive a paixão pelo esporte.</p>
+                <p>Pedro Henrique dos Santos Jorge - RA: 250972</p>
+            </section>
+            <nav class="rodape-coluna rodape-links" aria-label="Links do rodape">
+                <h2>Navegação</h2>
+                <a href="index.html">Home</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <section class="rodape-coluna">
+                <h2>Atendimento</h2>
+                <p>Av. dos Campeões, 1000 - São Paulo, SP</p>
+                <p>(11) 4002-2026</p>
+                <p>atendimento@futart.com.br</p>
+            </section>
+        </div>
+        <div class="container rodape-base">
+            <p>&copy; 2026 - FutArt. Camisas e artigos de futebol.</p>
+        </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo" type="button" aria-label="Voltar ao topo">&uarr;</button>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

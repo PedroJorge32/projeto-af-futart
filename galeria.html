@@ -1,0 +1,155 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: FutArt - Loja fictícia de artigos esportivos
+Aluno: Pedro Henrique dos Santos Jorge - RA: 250972
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutArt - Galeria</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img class="logo-menu" src="./img/Fut 1.png" alt="Logo FutArt">
+                    FutArt
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria-topo">
+            <div class="container text-center">
+                <h1>Galeria de novidades e lançamentos</h1>
+                <p class="mx-auto texto-limite">Confira camisas de clubes, seleções e itens promocionais da FutArt. Os filtros abaixo usam JavaScript para manipular os cards da página.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="filtros-galeria mb-5" aria-label="Filtros da galeria">
+                <button class="filtro-btn ativo" type="button" data-filtro="todos">Todos</button>
+                <button class="filtro-btn" type="button" data-filtro="clubes">Clubes</button>
+                <button class="filtro-btn" type="button" data-filtro="selecao">Seleção</button>
+                <button class="filtro-btn" type="button" data-filtro="promocao">Promoções</button>
+            </div>
+
+            <div class="row g-4">
+                <article class="col-sm-6 col-lg-4 item-galeria" data-categoria="clubes">
+                    <div class="card card-futart">
+                        <img src="./img/CAMISA 1.jpeg" class="card-img-top" alt="Camisa vermelha do Corinthians">
+                        <div class="card-body">
+                            <span class="badge-futart">Clube</span>
+                            <h2 class="card-title h5 mt-3">Corinthians 2026</h2>
+                            <p class="card-text">Camisa para torcedores que acompanham cada rodada com estilo.</p>
+                            <p class="preco">R$ 150,00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-6 col-lg-4 item-galeria" data-categoria="selecao">
+                    <div class="card card-futart">
+                        <img src="./img/CAMISA 2.jpeg" class="card-img-top" alt="Camisa amarela da seleção brasileira">
+                        <div class="card-body">
+                            <span class="badge-futart">Seleção</span>
+                            <h2 class="card-title h5 mt-3">Brasil 2026</h2>
+                            <p class="card-text">Modelo inspirado nas cores nacionais para grandes campeonatos.</p>
+                            <p class="preco">R$ 150,00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-6 col-lg-4 item-galeria" data-categoria="clubes">
+                    <div class="card card-futart">
+                        <img src="./img/CAMISA 3.jpeg" class="card-img-top" alt="Camisa do Santos">
+                        <div class="card-body">
+                            <span class="badge-futart">Clube</span>
+                            <h2 class="card-title h5 mt-3">Santos clássica</h2>
+                            <p class="card-text">Visual limpo para quem gosta da tradição do futebol brasileiro.</p>
+                            <p class="preco">R$ 150,00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-6 col-lg-4 item-galeria" data-categoria="clubes">
+                    <div class="card card-futart">
+                        <img src="./img/CAMISA 4.jpeg" class="card-img-top" alt="Camisa azul do Cruzeiro">
+                        <div class="card-body">
+                            <span class="badge-futart">Clube</span>
+                            <h2 class="card-title h5 mt-3">Cruzeiro azul</h2>
+                            <p class="card-text">Lançamento fictício com destaque para conforto e visual esportivo.</p>
+                            <p class="preco">R$ 150,00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-6 col-lg-4 item-galeria" data-categoria="promocao">
+                    <div class="card card-futart">
+                        <img src="./img/camisa 5.jpeg" class="card-img-top" alt="Camisa do Vitória em promoção">
+                        <div class="card-body">
+                            <span class="badge-futart">Promoção</span>
+                            <h2 class="card-title h5 mt-3">Vitória oferta</h2>
+                            <p class="card-text">Opção promocional para mostrar cards de lançamento e vitrine.</p>
+                            <p class="preco">R$ 66,00</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-6 col-lg-4 item-galeria" data-categoria="promocao">
+                    <div class="card card-futart">
+                        <img src="./img/Banner.jpeg" class="card-img-top" alt="Banner de produtos esportivos FutArt">
+                        <div class="card-body">
+                            <span class="badge-futart">Novidade</span>
+                            <h2 class="card-title h5 mt-3">Kit torcedor</h2>
+                            <p class="card-text">Combo fictício com camisa, atendimento online e entrega simulada.</p>
+                            <p class="preco">R$ 199,00</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-grid">
+            <section class="rodape-coluna">
+                <h2>FutArt</h2>
+                <p>Camisas de futebol, lançamentos e produtos para quem vive a paixão pelo esporte.</p>
+                <p>Pedro Henrique dos Santos Jorge - RA: 250972</p>
+            </section>
+            <nav class="rodape-coluna rodape-links" aria-label="Links do rodape">
+                <h2>Navegação</h2>
+                <a href="index.html">Home</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <section class="rodape-coluna">
+                <h2>Atendimento</h2>
+                <p>Av. dos Campeões, 1000 - São Paulo, SP</p>
+                <p>(11) 4002-2026</p>
+                <p>atendimento@futart.com.br</p>
+            </section>
+        </div>
+        <div class="container rodape-base">
+            <p>&copy; 2026 - FutArt. Camisas e artigos de futebol.</p>
+        </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo" type="button" aria-label="Voltar ao topo">&uarr;</button>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

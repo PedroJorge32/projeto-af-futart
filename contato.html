@@ -1,0 +1,140 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: FutArt - Loja fictícia de artigos esportivos
+Aluno: Pedro Henrique dos Santos Jorge - RA: 250972
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutArt - Contato</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Menu principal">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img class="logo-menu" src="./img/Fut 1.png" alt="Logo FutArt">
+                    FutArt
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato-topo">
+            <div class="container text-center">
+                <h1>Contato FutArt</h1>
+                <p class="mx-auto texto-limite">Fale com a FutArt para consultar tamanhos, camisas disponíveis, promoções e pedidos para sua torcida.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row g-4">
+                <article class="col-lg-7">
+                    <form id="formContato" class="form-contato" action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" minlength="3" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto:</label>
+                            <select id="assunto" name="assunto" class="form-select" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="duvida">Dúvida sobre produto</option>
+                                <option value="orcamento">Orçamento fictício</option>
+                                <option value="parceria">Parceria esportiva</option>
+                                <option value="troca">Troca ou devolução</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" minlength="10" required></textarea>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2">
+                            <button type="submit" class="btn btn-futart">Enviar</button>
+                            <button type="reset" class="btn btn-secondary">Limpar</button>
+                        </div>
+                        <p id="alertaFormulario" class="alerta-formulario" role="status"></p>
+                    </form>
+                </article>
+
+                <article class="col-lg-5">
+                    <div class="bloco-contato h-100">
+                        <h2 class="titulo-secao h4">Informações da loja</h2>
+                        <div class="contato-info-lista">
+                            <p><strong>Endereço:</strong> Av. dos Campeões, 1000 - São Paulo, SP</p>
+                            <p><strong>Telefone:</strong> (11) 4002-2026</p>
+                            <p><strong>E-mail:</strong> atendimento@futart.com.br</p>
+                            <p><strong>Horário:</strong> Segunda a sexta, das 9h às 18h</p>
+                        </div>
+                        <h3 class="h5 mt-4">Redes sociais fictícias</h3>
+                        <div class="redes-sociais">
+                            <a href="#" aria-label="Instagram fictício da FutArt">Instagram</a>
+                            <a href="#" aria-label="Facebook fictício da FutArt">Facebook</a>
+                            <a href="#" aria-label="YouTube fictício da FutArt">YouTube</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="container pt-0">
+            <h2 class="titulo-secao">Localização</h2>
+            <iframe class="mapa" src="https://www.google.com/maps?q=Av.%20Paulista%2C%20Sao%20Paulo%2C%20SP&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Mapa com localização fictícia da FutArt"></iframe>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-grid">
+            <section class="rodape-coluna">
+                <h2>FutArt</h2>
+                <p>Camisas de futebol, lançamentos e produtos para quem vive a paixão pelo esporte.</p>
+                <p>Pedro Henrique dos Santos Jorge - RA: 250972</p>
+            </section>
+            <nav class="rodape-coluna rodape-links" aria-label="Links do rodape">
+                <h2>Navegação</h2>
+                <a href="index.html">Home</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+            <section class="rodape-coluna">
+                <h2>Atendimento</h2>
+                <p>Av. dos Campeões, 1000 - São Paulo, SP</p>
+                <p>(11) 4002-2026</p>
+                <p>atendimento@futart.com.br</p>
+            </section>
+        </div>
+        <div class="container rodape-base">
+            <p>&copy; 2026 - FutArt. Camisas e artigos de futebol.</p>
+        </div>
+    </footer>
+
+    <button id="btnTopo" class="btn-topo" type="button" aria-label="Voltar ao topo">&uarr;</button>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
