@@ -29,4 +29,4 @@ Site fictício de uma loja de artigos esportivos focada em camisas de futebol, l
 - Layout responsivo com Bootstrap Grid e Flexbox
 
 ## Link do Repositório
-Inserir o link do GitHub.
+https://github.com/PedroJorge32/projeto-af-futart
